@@ -1,4 +1,30 @@
 /* Reset */
+/* Efeito de transição ao carregar página */
+header {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 0.5s ease-in-out forwards;
+}
+
+main {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 0.5s ease-in-out forwards;
+}
+
+
+/* Animação de deslize da esquerda para a direita */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +34,7 @@
 
 /* Barra Superior */
 header {
-    background-color: #007bff;
+    background-color: #2f3031;
     color: white;
     text-align: center;
     padding: 15px;
@@ -31,12 +57,68 @@ main h2 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #004aad;
+    background: linear-gradient(45deg, #2d2d2e, #2f3031);
+    background-size: 400% 400%;
+    animation: gradientMove 5s infinite alternate;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
 
+/* Animação do gradiente */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.bottom-nav a img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ícones dos botões */
+.bottom-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Animação ao clicar no botão */
+.bottom-nav a:active {
+    transform: scale(1.2);
+}
+
+/* Efeito ao passar o mouse (para desktop) */
+.bottom-nav a:hover {
+    filter: brightness(1.2);
+}
+
+/* Ícone ativo */
+.active {
+    background: linear-gradient(135deg, #0059ff, #ff00ff);
+    animation: pulse 1.5s infinite alternate;
+}
+
+
+/* Pulso suave no botão ativo */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Ícones dentro dos botões */
 .bottom-nav a img {
     width: 40px;
     height: 40px;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogos - ZTR Company</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -12,16 +13,20 @@
     <header>
         <h1>Jogos</h1>
     </header>
-
-    <!-- Conteúdo Principal -->
-    <main>
-        <h2>Seja bem-vindo à ZTR COMPANY</h2>
-        <p>Aqui ficarão todos os jogos da ZTR COMPANY</p>
-    </main>
+    <div class="game-cards">
+        <div class="game-card">
+            <img src="img/parkour-space.jpg" alt="Parkour Space">
+            <h3>Parkour Space</h3>
+        </div>
+        <div class="game-card">
+            <img src="img/astronomia.jpg" alt="Astronomia">
+            <h3>Astronomia</h3>
+        </div>
+    </div>
 
     <!-- Barra de Navegação Inferior -->
     <nav class="bottom-nav">
-        <a href="jogos.html"><img src="img/games.png" alt="Jogos"></a>
+        <a href="jogos.html" class="active"><img src="img/games.png" alt="Jogos"></a>
         <a href="atualizacoes.html"><img src="img/atua.png" alt="Studios"></a>
         <a href="index.html"><img src="img/home.png" alt="Home"></a>
         <a href="studios.html"><img src="img/studio.png" alt="Studios"></a>
