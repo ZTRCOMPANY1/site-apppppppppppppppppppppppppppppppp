@@ -12,16 +12,46 @@
     <!-- Barra Superior -->
     <header>
         <h1>Atualizações</h1>
+        
     </header>
-    <div class="update-cards">
-        <div class="update-card">
-            <img src="img/atua.png" alt="ZTR Company">
-            <div>
-                <h3>ZTR COMPANY</h3>
-                <p>Hierarquia</p>
-            </div>
-        </div>
+        <!-- Botão de menu -->
+        <button class="menu-btn" onclick="openMenu()"> =</button>
     </div>
+
+    <!-- Menu lateral -->
+    <div id="menu" class="menu">
+        <button class="close-btn" onclick="closeMenu()">✖</button>
+        <h2>Menu</h2>
+        <a class="menu-downloads"href="ABAS/downloads/downloads.html"> 📥 <strong>Downloads</strong></a>
+    </div>
+
+    <!-- Fundo escuro ao abrir o menu -->
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+    <main>
+        <!-- Lista de atualizações -->
+        <section id="lista-atualizacoes">
+            <div class="card" onclick="abrirAtualizacao('ztr-studio')">
+                <h2>🛠 Novo Studio da ZTR COMPANY</h2>
+                <p>Novas fases, melhorias gráficas e mais desafios!</p>
+            </div>
+
+            <div class="card" onclick="abrirAtualizacao('parkour-update')">
+                <h2>🎮 Atualização Parkour Space 2.1</h2>
+                <p>Novas fases, melhorias gráficas e mais desafios!</p>
+            </div>
+
+            <div class="card" onclick="abrirAtualizacao('ztr-app')">
+                <h2>📱 Novo Aplicativo ZTR Company</h2>
+                <p>Descubra o novo app da ZTR Company com mais recursos e design moderno!</p>
+            </div>
+        </section>
+
+        <!-- Detalhes da atualização -->
+        <section id="detalhes-atualizacao" class="hidden">
+            <button class="voltar" onclick="fecharAtualizacao()">⬅ Voltar</button>
+            <div id="conteudo-atualizacao"></div>
+        </section>
+    </main>
 
     <!-- Barra de Navegação Inferior -->
     <nav class="bottom-nav">
@@ -32,5 +62,7 @@
         <a href="contato.html"><img src="img/contato.png" alt="contato"></a>
     </nav>
 
+
+    <script defer src="script.js"></script>
 </body>
 </html>

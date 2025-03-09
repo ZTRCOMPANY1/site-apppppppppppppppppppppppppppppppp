@@ -6,6 +6,7 @@
     <title>Jogos - ZTR Company</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -13,15 +14,40 @@
     <header>
         <h1>Jogos</h1>
     </header>
+            <!-- Botão de menu -->
+            <button class="menu-btn" onclick="openMenu()"> =</button>
+        </div>
+    
+        <!-- Menu lateral -->
+        <div id="menu" class="menu">
+            <button class="close-btn" onclick="closeMenu()">✖</button>
+            <h2>Menu</h2>
+            <a class="menu-downloads"href="ABAS/downloads/downloads.html"> 📥 <strong>Downloads</strong></a>
+        </div>
+    
+        <!-- Fundo escuro ao abrir o menu -->
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+        
     <div class="game-cards">
         <div class="game-card">
-            <img src="img/parkour-space.jpg" alt="Parkour Space">
+            <img src="img/parkourspace.png" alt="Parkour Space">
             <h3>Parkour Space</h3>
+            <p>ZTR COMPANY</p>
+            <p>ㅤ</p>
+            
+            <a href="parkour.html" class="botao-mais">
+                <span>🎮 Ver Mais</span>
+            </a>
         </div>
         <div class="game-card">
-            <img src="img/astronomia.jpg" alt="Astronomia">
-            <h3>Astronomia</h3>
+            <img src="img/astro2.png" alt="Astronomia">
+            <h3><S>Astronomia</S></h3>
+            <p>ZTR COMPANY</p>
+            <h2>Cancelado</h2>
+            <p>ㅤ</p>
         </div>
+    
     </div>
 
     <!-- Barra de Navegação Inferior -->

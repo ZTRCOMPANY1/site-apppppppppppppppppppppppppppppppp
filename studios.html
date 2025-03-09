@@ -6,6 +6,7 @@
     <title>studios - ZTR Company</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -13,14 +14,39 @@
     <header>
         <h1>Studios</h1>
     </header>
+            <!-- Botão de menu -->
+            <button class="menu-btn" onclick="openMenu()"> =</button>
+        </div>
+    
+        <!-- Menu lateral -->
+        <div id="menu" class="menu">
+            <button class="close-btn" onclick="closeMenu()">✖</button>
+            <h2>Menu</h2>
+            <a class="menu-downloads"href="ABAS/downloads/downloads.html"> 📥 <strong>Downloads</strong></a>
+        </div>
+    
+        <!-- Fundo escuro ao abrir o menu -->
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+        
     <div class="studio-cards">
         <div class="studio-card">
-            <img src="img/studio.png" alt="ZTR Company">
+            <img src="img/ztrcompany.png" alt="ZTR Company">
             <h3>ZTR COMPANY</h3>
+            <p>Perfil</p>
+            <p>ㅤ</p>
+            <a href="ABAS/studios/ztr company/ztrcompany.html" class="botao-mais">
+                <span>🎮 Ver Mais</span>
+            </a>
         </div>
         <div class="studio-card">
-            <img src="img/studio.png" alt="ZTR Studio">
+            <img src="img/ztrstudio.png" alt="ZTR Studio">
             <h3>ZTR STUDIO</h3>
+            <p>Perfil</p>
+            <p>ㅤ</p>
+            <a href="ABAS/studios/ztr studio/ztrstudio.html" class="botao-mais">
+                <span>🎮 Ver Mais</span>
+            </a>
         </div>
     </div>
 

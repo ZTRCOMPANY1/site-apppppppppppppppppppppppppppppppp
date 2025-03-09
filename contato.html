@@ -6,6 +6,7 @@
     <title>Contato - ZTR Company</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -13,11 +14,30 @@
     <header>
         <h1>Contato</h1>
     </header>
+            <!-- Botão de menu -->
+            <button class="menu-btn" onclick="openMenu()"> =</button>
+        </div>
+    
+        <!-- Menu lateral -->
+        <div id="menu" class="menu">
+            <button class="close-btn" onclick="closeMenu()">✖</button>
+            <h2>Menu</h2>
+            <a class="menu-downloads"href="ABAS/downloads/downloads.html"> 📥 <strong>Downloads</strong></a>
+        </div>
+    
+        <!-- Fundo escuro ao abrir o menu -->
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+        
 
     <!-- Conteúdo Principal -->
     <main>
         <h2>Seja bem-vindo à ZTR COMPANY</h2>
         <p>Aqui ficarão os contatos da ZTR COMPANY</p>
+    </main>
+    <main>
+        <h2>Entre em contato</h2>
+        <p>Email: contato@ztrcompany.com</p>
+        <p>Telefone: (00) 12345-6789</p>
     </main>
 
     <!-- Barra de Navegação Inferior -->
