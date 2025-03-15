@@ -1,0 +1,85 @@
+/* Banner deslizante */
+/* Estilizando o banner */
+/* Estilizando o banner de boas-vindas */
+.banner {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #007bff, #00ffd5);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out, glow 3s infinite alternate;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de brilho */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(201, 0, 241, 0.808);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(0, 204, 255);
+    }
+}
+
+/* Estilizando a seção de Últimas Atualizações */
+.updates-banner {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e90bd;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.updates-banner h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Estilizando os cards de atualização */
+.update-card {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 38, 255, 0.5);
+}
+
+.update-card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.update-card p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}

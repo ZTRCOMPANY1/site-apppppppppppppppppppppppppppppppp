@@ -29,16 +29,127 @@
         <div id="overlay" class="overlay" onclick="closeMenu()"></div>
         
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <h2>Seja bem-vindo à ZTR COMPANY</h2>
-        <p>Aqui ficarão os contatos da ZTR COMPANY</p>
-    </main>
-    <main>
-        <h2>Entre em contato</h2>
-        <p>Email: contato@ztrcompany.com</p>
-        <p>Telefone: (00) 12345-6789</p>
-    </main>
+        <div class="contact-section">
+            <h2>Contatos</h2>
+        
+            <div class="contact-item">
+                <a href="mailto:ztrcompani@hotmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i> ztrcompani@hotmail.com
+                </a>
+            </div>
+        
+            <div class="contact-item">
+                <a href="https://www.instagram.com/ztr_company" target="_blank">
+                    <i class="fab fa-instagram"></i> ztr_company
+                </a>
+            </div>
+        
+            <div class="contact-item">
+                <a href="https://www.youtube.com/@ZTRCOMPANY" target="_blank">
+                    <i class="fab fa-youtube"></i> @ZTRCOMPANY
+                </a>
+            </div>
+        
+            <div class="contact-item">
+                <a href="https://github.com/ZTRCOMPANY1" target="_blank">
+                    <i class="fab fa-github"></i> ZTRCOMPANY1
+                </a>
+            </div>
+        
+            <button class="btn-sites" onclick="toggleSites()">Sites Da ZTR COMPANY</button>
+        
+            <div id="sites-list" class="hidden">
+                <h3>Todos os Sites Feitos pela ZTR COMPANY</h3>
+        
+                <button class="btn-site" onclick="window.open('https://ztrcompany.site/site.html', '_blank')">ZTR COMPANY</button>
+                <button class="btn-site" onclick="window.open('https://parkourspace.site', '_blank')">Parkour Space</button>
+                <button class="btn-site" onclick="window.open('https://siteofcastronomia.site/', '_blank')">Site OFC Astronomia</button>
+                <button class="btn-site" onclick="window.open('https://djjuliobeat.site', '_blank')">DJ JULIO BEAT</button>
+                <button class="btn-site" onclick="window.open('https://ztrem.pythonanywhere.com/', '_blank')">Ver Clima de Cidades</button>
+        
+
+        
+                <p>
+                    Então depois dê uma olhada e venha descobrir um pouco do que a ZTR COMPANY faz, além de desenvolver jogos para PC e celulares.
+                </p>
+            </div>
+        </div>
+        
+        <style>
+
+            @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+            .contact-section {
+                text-align: center;
+                padding: 20px;
+            }
+        
+            .contact-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                background: #333;
+                margin: 5px 0;
+                border-radius: 5px;
+                color: white;
+                font-size: 18px;
+            }
+        
+            .contact-item a {
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        
+            .contact-item i {
+                font-size: 20px;
+            }
+        
+            .btn-sites {
+                background: purple;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+        
+            #sites-list {
+                margin-top: 15px;
+            }
+        
+            .hidden {
+                display: none;
+            }
+        
+            .btn-site {
+                display: block;
+                width: 100%;
+                background: purple;
+                color: white;
+                padding: 10px;
+                border: none;
+                margin: 5px 0;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+        
+        <script>
+            function toggleSites() {
+                var siteList = document.getElementById('sites-list');
+                if (siteList.classList.contains('hidden')) {
+                    siteList.classList.remove('hidden');
+                } else {
+                    siteList.classList.add('hidden');
+                }
+            }
+        </script>
+        
 
     <!-- Barra de Navegação Inferior -->
     <nav class="bottom-nav">

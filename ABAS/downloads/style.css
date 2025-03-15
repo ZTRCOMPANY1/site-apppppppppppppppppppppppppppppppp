@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #282828;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+#banner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    scroll-snap-align: center;
+    transition: transform 0.3s;
+}
+
+#app-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.app-card:hover {
+    transform: scale(1.05);
+    background: #444;
+}
+
+#app-details {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+#app-images img {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#download-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#download-button:hover {
+    background-color: #45a049;
+}
