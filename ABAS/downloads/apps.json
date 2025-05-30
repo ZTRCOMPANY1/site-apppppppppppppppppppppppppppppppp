@@ -4,15 +4,8 @@
             "id": "1",
             "name": "Parkour Space",
             "description": "Um jogo de parkour no espaço.",
-            "download": "https://link-para-download.com/parkour-space",
+            "download": "https://ztrcompany1.github.io/pagina-download-em-breve/",
             "images": ["assets/parkourspace.png", "assets/parkour2.jpg"]
-        },
-        {
-            "id": "2",
-            "name": "ZTR Company App",
-            "description": "O app oficial da ZTR Company.",
-            "download": "https://link-para-download.com/ztr-company-app",
-            "images": ["assets/ztr1.jpg", "assets/ztr2.jpg"]
         }
     ]
 }

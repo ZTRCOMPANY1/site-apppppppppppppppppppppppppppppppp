@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const atualizacoes = {
+
+    "ztr-launcher": {
+        titulo: "📱 Novo Aplicativo ZTR Company",
+        descricao: "O novo aplicativo da ZTR Company traz mais recursos, melhor desempenho e uma interface renovada!",
+        imagens: ["img/atua.png", "app2.png"],
+        link: "ABAS/atualizacoes/4.appztrlauncher/ztrlauncher.html" // Redirecionamento
+    },
+
     "ztr-studio": {
         titulo: "📱 Novo Aplicativo ZTR Company",
         descricao: "O novo aplicativo da ZTR Company traz mais recursos, melhor desempenho e uma interface renovada!",
